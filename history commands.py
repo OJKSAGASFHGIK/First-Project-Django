@@ -1,7 +1,8 @@
 """
 +Python:
 -urls.py:
-return HttpRequest() (Django module)
+def NameThatYouWant(OtherRandomName):
+ return HttpRequest('a') "<-It's a django module"
 """
 """
 +Django:
