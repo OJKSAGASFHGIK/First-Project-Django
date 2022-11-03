@@ -7,8 +7,11 @@ def NameThatYouWant(OtherRandomName):
 """
 +Django:
 -base commands:
+urlspatterns = [path('', include('local.local'))]
+from django.urls import include, path
 from django.contrib import admin
 from django.urls import path
+from django.http import HttpResponse
 -extra commands:
 from django.http import HttpRequest
 """
