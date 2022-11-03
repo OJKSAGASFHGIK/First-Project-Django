@@ -18,11 +18,21 @@ from django.http import HttpResponse
 from django.urls import path
 
 
-def solitacao(request):
-    return HttpResponse('Coffee with banana')
+def nothing(ItsArequest):
+    return HttpResponse('Hello... what do you want?')
+
+
+def contact(YeapArequest):
+    return HttpResponse('My discord is Greque#7432')
+
+
+def about(OhYesARequestttt):
+    return HttpResponse('I like coffee!')
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('texto/', solitacao),
+    path('', nothing),
+    path('contact/', contact),
+    path('about/', about),
 ]
