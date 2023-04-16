@@ -1,0 +1,24 @@
+"""
+Commands in order:
+
+===
+link(22):https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/29432168#overview
+2:07 = 'projeto/urls.py:'
+    from django.http import HttpResponse
+
+    def home(request):
+        return HttpResponse('Home')
+    def contato(request):
+        return HttpResponse('Contato')
+    def sobre(request):
+        return HttpResponse('Sobre')
+    
+    urlpatterns = [
+        path('', home),
+        path('admin/', contato),
+        path('sobre/', sobre),
+    ]
+6:32 = 'terminal:' python manage.py startapp recipes
+6:32 = 'recipes is the name of the folder that you will create'
+
+"""
