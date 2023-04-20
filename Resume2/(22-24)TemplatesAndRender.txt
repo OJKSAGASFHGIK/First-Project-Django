@@ -27,6 +27,7 @@ Commands in order (keep your HTML configured):
     from django.http import HttpResponse
     def home(request):
         return HttpResponse('HOME')
+
 2:13 = 'projeto\urls.py:'
     from recipes.views import home
 6:15 = 'create a new folder:'
