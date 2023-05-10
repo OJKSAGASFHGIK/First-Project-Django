@@ -1,11 +1,22 @@
-{% include 'recipes/a2head/a1head.html' %}
+{% include 'recipes/a2partials/a1head.html' %}
+<link rel="stylesheet" href="..\a2partials\a0styles.css">
 <body>
-    <header>
-        <h1>
-            <a href="#">
-                <span>{{ name }} - MG </span><i class="fa-solid fa-utensils"></i>
-            </a>
-        </h1>
-    </header>
+    {% include 'recipes/a2partials/a2header.html' %}<!--Logo-->
+    {% include 'recipes/a2partials/a3search.html' %}<!--Search-->
+    <main class='grid'><!--Recipes-->
+        <div>
+            <div class="grid-fix">
+                {% include 'recipes/a2partials/a4recipes.html' %}
+                {% include 'recipes/a2partials/a4recipes.html' %}
+                {% include 'recipes/a2partials/a4recipes.html' %}
+            </div>
+        </div>
+        </div>
+    </main>
+    <footer class="finalConsiderations">
+        <div><a href='https://github.com/OJKSAGASFHGIK' target='_blank' rel='noreferrer noopener'>By Marcus Guilherme</a></div>
+        <div><a href='https://github.com/OJKSAGASFHGIK' target='_blank' rel='noreferrer noopener'>Powered by Django</a></div>
+    </footer>
 </body>
+
 </html>
