@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    {% include 'recipes\a2partials\a1head.html' %}
+    <title>Home | {% block title %}{% endblock title %}</title>
 </head>
+
 <body>
-    <h1>Base home</h1>
+    {% include 'recipes/a2partials/a2header.html' %}<!--Logo-->
+    {% include 'recipes/a2partials/a3search.html' %}<!--Search-->
+    <main class='grid'><!--Recipes-->
+        <div>
+            <div class="grid-fix">
+                {% block content %}{% endblock content %}
+            </div>
+        </div>
+        </div>
+    </main>
+    {% include 'recipes/a2partials/a5footer.html' %}
 </body>
 </html>
